@@ -1,0 +1,16 @@
+/* C1 Filter */
+@import "../utils/filter";
+
+.filter-c1 {
+    background: linear-gradient(#d0a9a9, #bb8a8a, #d49390, rgba(24, 57, 60, 0.25) 110%);
+
+    img {
+        @include filter("grayscale(6%) contrast(120%)");
+        mix-blend-mode: hard-light;
+    }
+
+    &:after {
+        background-color: rgba(31, 130, 124, 0.75);
+        mix-blend-mode: overlay;
+    }
+}
