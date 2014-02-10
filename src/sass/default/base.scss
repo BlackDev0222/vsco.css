@@ -1,0 +1,15 @@
+/** Base enhancement with brightening, increased saturation and contrast */
+@import "../utils/filter";
+
+.vsco:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.filter-base {
+    @include filter("saturate(1) brightness(1.1) contrast(1.1) grayscale(0)");
+}
