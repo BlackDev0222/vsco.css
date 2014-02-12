@@ -1,0 +1,17 @@
+/* B1 Filter */
+@import "../utils/filter";
+
+.filter-b1 {
+    background: linear-gradient(#b1b1b1, #6f6f6f, #828282, #333333 110%);
+
+    img {
+        @include filter("saturate(0.05) brightness(1.15) contrast(1.1) grayscale(95%)");
+        mix-blend-mode: hard-light;
+    }
+
+    &:after {
+        background-color: rgb(224, 224, 224);
+        mix-blend-mode: multiply;
+    }
+
+}
